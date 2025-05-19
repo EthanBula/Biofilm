@@ -4,6 +4,7 @@ from dash import html, dcc, Input, Output, State, callback_context
 
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server 
 
 # --- Define styles (No changes from last working version) ---
 common_font_family = 'Georgia, "Times New Roman", Times, serif'
